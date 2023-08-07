@@ -9,6 +9,7 @@ Managing maintenance windows for On-premises and AWS workloads, especially acros
 With this serverless architecture, organizations can efficiently display customized maintenance messages to users, simplifying the management of maintenance windows across regions. The solution leverages AWS Lambda functions and ALBs in different regions, providing the flexibility and scalability needed to handle varying user traffic during maintenance activities.
 
 Compared to traditional approaches that involve hosting static websites in S3 or deploying custom Lambda functions, this solution significantly reduces resource overhead and operational complexity. By eliminating the need for additional infrastructure, it streamlines the process of notifying users and reduces overall costs. Monitoring and alerting mechanisms further ensure smooth execution and immediate response to any potential issues during maintenance periods.
+
 **Advantages of this approach:**
 
 **Simplicity and Cost-Effectiveness:** Implementing a static response at the ALB level requires minimal configuration and avoids the overhead of setting up and maintaining additional AWS resources. This can lead to cost savings for organizations, especially for small-scale or occasional maintenance requirements.
