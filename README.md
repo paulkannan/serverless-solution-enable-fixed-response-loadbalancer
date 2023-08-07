@@ -32,7 +32,7 @@ Most of the Organisations have to implement maintenance window for their On-prem
 
 **Plan the Infrastructure Changes:** Run **terraform plan** to preview the infrastructure changes that Terraform will make. This step provides an overview of the resources that will be created, modified, or destroyed.
 
-**Apply the Infrastructure Changes: ** If you are satisfied with the planned changes, apply the infrastructure modifications by running **terraform apply**. Terraform will prompt for confirmation before making any changes.
+**Apply the Infrastructure Changes:** If you are satisfied with the planned changes, apply the infrastructure modifications by running **terraform apply**. Terraform will prompt for confirmation before making any changes.
 
 **Review and Validate the Infrastructure:** Once the Terraform apply command completes, review the created infrastructure to ensure it matches your expectations. Verify that the resources have been provisioned correctly.
 
