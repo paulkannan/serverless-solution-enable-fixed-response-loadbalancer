@@ -4,8 +4,11 @@ Serverless solution to enable maintenance status in AWS LoadBalancers
 
 ![Screenshot 2023-08-04 at 6 47 35 PM](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/02da9bf8-42f7-473e-8f3d-b23f238e8b5b)
 
-Most of the Organisations have to implement maintenance window for their On-premises and AWS workloads. This Serverless solution offers a static response mechanism at the Application Load Balancer (ALB) level, effectively serving as a maintenance window for AWS workloads. By using this approach, organizations can easily display a customized message to users during maintenance periods without the need for additional AWS resources like a static website hosted in S3 or Lambda functions.
+Managing maintenance windows for On-premises and AWS workloads, especially across multiple regions, can be a complex task for organizations. To address this challenge, we present a serverless solution that seamlessly implements static response mechanisms at the Application Load Balancer (ALB) level deployed in various regions. This approach offers a straightforward and cost-effective way to notify end users during maintenance periods without relying on additional AWS resources like static websites or Lambda functions.
 
+With this serverless architecture, organizations can efficiently display customized maintenance messages to users, simplifying the management of maintenance windows across regions. The solution leverages AWS Lambda functions and ALBs in different regions, providing the flexibility and scalability needed to handle varying user traffic during maintenance activities.
+
+Compared to traditional approaches that involve hosting static websites in S3 or deploying custom Lambda functions, this solution significantly reduces resource overhead and operational complexity. By eliminating the need for additional infrastructure, it streamlines the process of notifying users and reduces overall costs. Monitoring and alerting mechanisms further ensure smooth execution and immediate response to any potential issues during maintenance periods.
 **Advantages of this approach:**
 
 **Simplicity and Cost-Effectiveness:** Implementing a static response at the ALB level requires minimal configuration and avoids the overhead of setting up and maintaining additional AWS resources. This can lead to cost savings for organizations, especially for small-scale or occasional maintenance requirements.
