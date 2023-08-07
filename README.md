@@ -48,6 +48,6 @@ Open AWS Console and choose API Gateway. The API Gateway has 2 methods /maint an
 
 It will trigger apply503 Lambda function and the user can validate the change of rules priority of fixed response code to 1 in listener rule:
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/e50009d3-6c0d-4f14-ae51-bf6ff48eea36)
-If /maint PUT is triggered it will trigger revert503 Lambda Function and the fixed response will revert back to Priority 3.
+If /original PUT is triggered it will trigger revert503 Lambda Function and the fixed response will revert back to Priority 3.
 
 
