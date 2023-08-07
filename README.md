@@ -1,4 +1,4 @@
-# serverless-solution-enable-fixed-response-loadbalancer
+# serverless-solution-enable-fixed-response-in-loadbalancer
 Serverless solution to enable maintenance status in AWS LoadBalancers
 
 
