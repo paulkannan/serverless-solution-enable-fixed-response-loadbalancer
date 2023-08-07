@@ -44,9 +44,11 @@ Open AWS Console and select EC2. In EC2, select Loadbalancer. The Load Balancer 
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/f21729bb-bf2e-4afb-b977-1a984db10a68)
 
 Open AWS Console and choose API Gateway. The API Gateway has 2 methods /maint and /original. Select PUT under /maint and Click on Test
+
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/b57687b1-7220-43b5-833d-d47db84fd8b2)
 
 It will trigger apply503 Lambda function and the user can validate the change of rules priority of fixed response code to 1 in listener rule:
+
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/e50009d3-6c0d-4f14-ae51-bf6ff48eea36)
 
 If /original PUT is triggered it will trigger revert503 Lambda Function and the fixed response will revert back to Priority 3.
