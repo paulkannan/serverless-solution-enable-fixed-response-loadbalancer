@@ -44,16 +44,22 @@ Compared to traditional approaches that involve hosting static websites in S3 or
 **How to test the API:**
 Open AWS Console and select EC2. In EC2, select Loadbalancer. The Load Balancer will have 4 listener rules:
 
-![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/f21729bb-bf2e-4afb-b977-1a984db10a68)
+![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/39411a2f-776d-438d-9e34-cebce92e43f2)
 
 Open AWS Console and choose API Gateway. The API Gateway has 2 methods /maint and /original. Select PUT under /maint and Click on Test
 
-![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/b57687b1-7220-43b5-833d-d47db84fd8b2)
+![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/8c18e8b8-69d9-4da8-9d89-497b291c5986)
 
 It will trigger apply503 Lambda function and the user can validate the change of rules priority of fixed response code to 1 in listener rule:
 
-![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/e50009d3-6c0d-4f14-ae51-bf6ff48eea36)
+![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/7906b226-5def-44f7-a45e-7a1d38a03635)
 
 If /original PUT is triggered it will trigger revert503 Lambda Function and the fixed response will revert back to Priority 3.
+![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/14a0759b-dbd7-4350-8ad8-32b613b2ac22)
+
+User can validate the change of rules priority of fixed response code to 1 in listener rule:
+![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/20e4aa3e-4adb-4e6c-9917-44b0723bfbd6)
+
+
 
 
