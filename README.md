@@ -1,6 +1,7 @@
 # Serverless Solution to enable fixed response in Loadbalancer
 Serverless solution to enable maintenance status in AWS LoadBalancers
-![awsalb](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/449205aa-b275-4e70-ba4f-e5ee1d1d2b60)
+![awsalb](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/7a62475e-ac59-49bc-ba5e-0959941b2384)
+
 
 
 
