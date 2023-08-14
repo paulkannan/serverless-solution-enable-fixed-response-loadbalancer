@@ -42,7 +42,7 @@ Compared to traditional approaches that involve hosting static websites in S3 or
 **Cleanup and Destroy the Infrastructure (Optional):** If you want to clean up the resources created by Terraform, run **terraform destroy**. This command will prompt for confirmation before destroying the resources.
 
 **How to test the API:**
-Open AWS Console and select EC2. In EC2, select Loadbalancer. The Load Balancer will have 4 listener rules:
+Open AWS Console and select EC2. In EC2, select Loadbalancer. The Load Balancer will have 4 listener rules and the priority 3 is restricted only to onprems 10.0.0.0/32:
 
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/39411a2f-776d-438d-9e34-cebce92e43f2)
 
@@ -50,7 +50,7 @@ Open AWS Console and choose API Gateway. The API Gateway has 2 methods /maint an
 
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/8c18e8b8-69d9-4da8-9d89-497b291c5986)
 
-It will trigger apply503 Lambda function and the user can validate the change of rules priority of fixed response code to 1 in listener rule:
+It will trigger apply503 Lambda function and the user can validate the change of rules priority of fixed response code for 10.0.0.0/32 to 1 in listener rule enforcing static response.
 
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/7906b226-5def-44f7-a45e-7a1d38a03635)
 
