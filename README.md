@@ -1,8 +1,9 @@
 # Serverless Solution to enable fixed response in Loadbalancer
 Serverless solution to enable maintenance status in AWS LoadBalancers
 
+![awsalb](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/abec3ab0-eff0-4dda-b88c-7546e23a26a3)
 
-![awsalb](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/345d319b-6e02-4edc-a531-0d27a26e418f)
+
 
 
 Managing maintenance windows for On-premises and AWS workloads, especially across multiple regions, can be a complex task for organizations. There are several approaches being followed to address this challenge. We present a serverless solution that seamlessly implements static response mechanisms at the Application Load Balancer level deployed in various regions with monitoring and notifying mechanisms. This approach offers a straightforward and cost-effective way to notify end users during maintenance periods without relying on additional AWS resources like static websites or Lambda functions.
