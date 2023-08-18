@@ -55,6 +55,7 @@ It will trigger apply503 Lambda function and the user can validate the change of
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/7906b226-5def-44f7-a45e-7a1d38a03635)
 
 If /original PUT is triggered it will trigger revert503 Lambda Function and the fixed response will revert back to Priority 3 and notify the user by email through SNS.
+
 ![image](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/14a0759b-dbd7-4350-8ad8-32b613b2ac22)
 
 User can validate the change of rules priority of fixed response code to 1 in listener rule:
