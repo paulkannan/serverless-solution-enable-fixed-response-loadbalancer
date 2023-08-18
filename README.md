@@ -1,4 +1,4 @@
-# Serverless Solution to enable fixed response in Loadbalancer
+# Serverless Solution to change listener priority and enable fixed response in Multi-Region Loadbalancer with logging & notification
 Serverless solution to enable maintenance status in AWS LoadBalancers
 ![awsalb](https://github.com/paulkannan/serverless-solution-enable-fixed-response-loadbalancer/assets/46925641/7a62475e-ac59-49bc-ba5e-0959941b2384)
 
